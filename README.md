@@ -26,7 +26,7 @@ This is a fork of John's share for Laravel 4.
 
 Install Composer dependency into your project
 
-    composer require chencha/share
+    composer require shreers123/share
 
 ## Usage
 
