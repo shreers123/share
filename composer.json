@@ -1,0 +1,46 @@
+{
+    "name": "rack/share",
+    "description": "Share links with Laravel",
+    "license": "MIT",
+    "keywords": [
+        "share",
+        "laravel"
+    ],
+    "authors": [
+        {
+            "name": "rack",
+            "email": "manoj@racksoftwares.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4 || ^8.0 || ^8.1",
+        "illuminate/support": "^6 || ^7 || ^8 || ^9 || ^10"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4 || ^5 || ^6 || ^7",
+        "rector/rector": "0.18.6",
+        "tightenco/tlint": "dev-main"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Chencha\\Share\\": "src/",
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "aliases": {
+                "Share": "Chencha\\Share\\ShareFacade"
+            },
+            "providers": [
+                "Chencha\\Share\\ShareServiceProvider"
+            ]
+        }
+    }
+}
